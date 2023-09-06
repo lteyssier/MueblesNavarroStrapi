@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "muebles",
+  "info": {
+    "singularName": "mueble",
+    "pluralName": "muebles",
+    "displayName": "muebles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "subcategoria": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "nopiezas": {
+      "type": "integer"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "integer"
+    },
+    "fechapublicacion": {
+      "type": "date"
+    },
+    "disponible": {
+      "type": "boolean"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "dimensiones": {
+      "type": "string"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "largo": {
+      "type": "decimal"
+    },
+    "ancho": {
+      "type": "decimal"
+    },
+    "alto": {
+      "type": "decimal"
+    },
+    "material": {
+      "type": "string"
+    }
+  }
+}
